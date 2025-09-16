@@ -15,6 +15,8 @@ const handleGetProfile = require("./Profile/controller/controller");
 const { handleImmediateReview } = require("./Webook/controller/controller");
 
 const app = express();
+
+app.set("trust proxy", 1);
 const pool = new Pool({
   connectionString:
     process.env.SESSION_POOLER,
