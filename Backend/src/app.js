@@ -20,7 +20,8 @@ const pool = new Pool({
     process.env.SUPABASE_CONNECTION_STRING,
   ssl: {
     rejectUnauthorized: false,
-  },
+  }, 
+  family: 4,
 });
 
 app.use(

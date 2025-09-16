@@ -1,7 +1,7 @@
 # AI Code Reviewer
 
 ### Overview: 
-!(screenshot)[Frontend\src\assets\screenshot.png]
+!(screenshot)[Frontend/src/assets/screenshot.png]
 
 ### Introduction:
 
