@@ -1,11 +1,12 @@
 # AI Code Reviewer
 
-### Overview: 
-!(screenshot)[Frontend/src/assets/screenshot.png]
+### Overview:
+
+![screenshot](Frontend/src/assets/screenshot.png)
 
 ### Introduction:
 
-An AI based code reveiwer that suggests improvements of code by pushing codes and pulling requests. 
+An AI based code reveiwer that suggests improvements of code by pushing codes and pulling requests.
 
 ### Purpose:
 
@@ -22,7 +23,7 @@ This project was made for developers who like changes versioned to their code an
 - **Frontend**:
   - React.js
   - Typescript
-  - Tailwindcss 
+  - Tailwindcss
   - react-router-dom
 - **Backend**:
   - Node.js
@@ -49,7 +50,6 @@ This project was made for developers who like changes versioned to their code an
   - **Repos**: Stores repository details and webhook event data.
   - **Session**: Stores users sessions.
   - And make sure to check your `.env` file too, it should look like this:
-  
 - **Backend**:
   ```env
   SUPABASE_URL=<YOUR_SUPABASE_DATABASE_URL>
@@ -67,13 +67,11 @@ This project was made for developers who like changes versioned to their code an
   COHERE_API_TOKEN=<YOUR_COHERE_API_TOKEN>
   GITHUB_APP_ID=<YOUR_APP_ID>
   ```
-  
 - **Frontend**:
   ```env
   VITE_NODE_ENV=<VITE_NODE_ENV>
   VITE_BACKEND_URL=<DEPLOYMENT_URL_OF_YOUR_BACKEND>
   ```
-  
 - **Installation**:
   **Make sure you've completed the above step carefully, else it won't work.**
 
@@ -87,6 +85,7 @@ This project was made for developers who like changes versioned to their code an
   3. Open two terminals in your editor and run the following commands:
 
      - **Terminal 1**:
+
        ```bash
        npm install
        cd Backend
@@ -118,12 +117,13 @@ This project was made for developers who like changes versioned to their code an
 - `GET /auth/github` – GitHub OAuth login.
 - `POST /review` – Trigger manual code review.
 
-### License: 
-Licensed under GPL 3.0 
+### License:
+
+Licensed under GPL 3.0
 
 ### Disclaimer
 
-This project integrates with the Cohere API. Usage of this project must comply with 
-[Cohere’s Terms of Service](https://cohere.com/terms). While the code is licensed 
-under GPL-3.0, access to or use of the Cohere API may be subject to additional 
+This project integrates with the Cohere API. Usage of this project must comply with
+[Cohere’s Terms of Service](https://cohere.com/terms). While the code is licensed
+under GPL-3.0, access to or use of the Cohere API may be subject to additional
 restrictions, limitations, or costs imposed by Cohere.
