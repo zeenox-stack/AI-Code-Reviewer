@@ -68,7 +68,7 @@ const Body: React.FC = React.memo(() => {
                 No repositories connected yet
               </h4>
               <span className="text-center text-gray-600 text-lg">
-                Connect your first repository to recieve AI code reviews
+                Connect your first repository to receive AI code reviews
               </span>
               <button
                 className="rounded-3xl bg-indigo-500 hover:bg-indigo-300 px-2 py-1 w-[16rem] flex justify-evenly items-center shadow-sm hover:shadow-md hover:-translate-y-1 delay-150 mt-5"

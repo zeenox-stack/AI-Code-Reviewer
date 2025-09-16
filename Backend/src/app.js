@@ -17,11 +17,10 @@ const { handleImmediateReview } = require("./Webook/controller/controller");
 const app = express();
 const pool = new Pool({
   connectionString:
-    process.env.SUPABASE_CONNECTION_STRING,
+    process.env.SESSION_POOLER,
   ssl: {
     rejectUnauthorized: false,
   }, 
-  family: 4,
 });
 
 app.use(
