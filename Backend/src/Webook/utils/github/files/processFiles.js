@@ -3,7 +3,7 @@ const buildDiff = require("../diffs/buildDiff");
 const getOcktokit = require("../../../../Repo/utils/getOcktokit");
 
 module.exports = async ({ owner, repo, installation_id }) => {
-  const { files, ref } = await getFiles({ owner, repo, installation_id });
+  const { files, sha, ref } = await getFiles({ owner, repo, installation_id });
   const octokit = await getOcktokit(installation_id);
   const diffs = [];
 
