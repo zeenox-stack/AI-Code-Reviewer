@@ -1,6 +1,7 @@
 const getOcktokit = require("../../../Repo/utils/getOcktokit");
 const createBranch = require("./createBranch");
-const createOrUpdateFile = require("./createOrUpdateFile");
+const createOrUpdateFile = require("./createOrUpdateFile"); 
+const getFileSha = require("./files/getFileSha");
 
 module.exports = async ({ responses, payload, metadata }) => {
   try {

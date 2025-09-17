@@ -87,8 +87,8 @@ This project was made for developers who like changes versioned to their code an
      - **Terminal 1**:
 
        ```bash
-       npm install
        cd Backend
+       npm install
        npm run dev
        # If you followed step 2
        node src/Server.js
@@ -96,8 +96,8 @@ This project was made for developers who like changes versioned to their code an
 
      - **Terminal 2**:
        ```bash
-       npm install
        cd Frontend
+       npm install
        npm run dev
        ```
 
