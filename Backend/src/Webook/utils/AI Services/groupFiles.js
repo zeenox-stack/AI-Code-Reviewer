@@ -1,6 +1,6 @@
 require("dotenv").config();
 const axios = require("axios");
-const getCodeFromResponse = require("../../getCodeFromResponse");
+const getCodeFromResponse = require("../getCodeFromResponse");
 
 const getFilePaths = (arr) => arr.map((file) => ({ path: file.path }));
 

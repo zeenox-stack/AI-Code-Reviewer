@@ -25,12 +25,13 @@ module.exports = async (groupedFiles) => {
                 Rules:
                 1. Always output valid JSON only. No extra text, no explanations.  
                 2. The output must be an array of objects, in the exact same order as the input groups.  
-                3. Each object must have:  
+                3. Always give a single object for a group.
+                4. Each object must have:  
                    - "branch": a short and meaningful branch name (use 'feature/<desc>' or 'fix/<desc>' format).  
                    - "title": a clear and concise pull request title.  
                    - "body": a meaningful pull request description, explaining the purpose of the changes.  
-                4. Branch names must be URL-safe (no spaces, special characters).  
-                5. Keep titles short (<80 chars).  
+                5. Branch names must be URL-safe (no spaces, special characters).  
+                6. Keep titles short (<80 chars).  
 
                 --- 
                 ### Input Format
@@ -89,7 +90,7 @@ module.exports = async (groupedFiles) => {
       }
 
       return parsed.metadata;
-    });
+    })[0];
   } catch (error) {
     console.error("Error while fetching metadata:", error.message);
     throw error;

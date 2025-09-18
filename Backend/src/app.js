@@ -18,11 +18,10 @@ const app = express();
 
 app.set("trust proxy", 1);
 const pool = new Pool({
-  connectionString:
-    process.env.SESSION_POOLER,
+  connectionString: process.env.SESSION_POOLER,
   ssl: {
     rejectUnauthorized: false,
-  }, 
+  },
 });
 
 app.use(
@@ -62,7 +61,7 @@ app.get("/check", authMiddleware, (req, res) =>
 
 app.use("/repo", authMiddleware, repoRoutes);
 
-app.use("/webhook", webHookRoutes); 
+app.use("/webhook", webHookRoutes);
 
 app.post("/review", authMiddleware, handleImmediateReview);
 

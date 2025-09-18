@@ -16,7 +16,7 @@ module.exports = async ({ responses, payload, metadata }) => {
       await createBranch(octokit, { owner, repo, sha: commit_sha, branch });
 
       for (const { path, patch } of responses[i]) {
-        let sha = await getFileSha(owner, { owner, repo, path });
+        let sha = await getFileSha(octokit, { owner, repo, path });
 
         await createOrUpdateFile(octokit, {
           owner,

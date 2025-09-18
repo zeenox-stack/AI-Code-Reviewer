@@ -1,7 +1,7 @@
 require("dotenv").config();
 const axios = require("axios");
 const getCodeFromResponse = require("../getCodeFromResponse");
-const groupFiles = require("../github/files/groupFiles");
+const groupFiles = require("./groupFiles");
 
 module.exports = async (contents, event) => {
   const mods = {
