@@ -25,7 +25,7 @@ module.exports = async (groupedFiles) => {
                 Rules:
                 1. Always output valid JSON only. No extra text, no explanations.  
                 2. The output must be an array of objects, in the exact same order as the input groups.  
-                3. Always give a single object for a group.
+                3. Always give a single metadata object for a single group.
                 4. Each object must have:  
                    - "branch": a short and meaningful branch name (use 'feature/<desc>' or 'fix/<desc>' format).  
                    - "title": a clear and concise pull request title.  
@@ -38,7 +38,15 @@ module.exports = async (groupedFiles) => {
                 {
                   "groups": [
                     [
-                      path: <path to a file>, 
+                      path: <path to a file 1>, 
+                      patch: <The changes made>
+                    ], 
+                    [
+                      path: <path to a file 2>, 
+                      patch: <The changes made>
+                    ], 
+                    [
+                      path: <path to a file 3>, 
                       patch: <The changes made>
                     ]
                   ]
